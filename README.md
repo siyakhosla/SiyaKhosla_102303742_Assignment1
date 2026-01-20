@@ -30,7 +30,7 @@ Only the **no₂** column is used, and missing values are removed before further
 Each value of x is transformed into z using a roll-number-dependent non-linear function:
 
 $$z = x + a_r \sin(b_r x)$$
-Where r is the university roll number and the parameters \( a_r \) and \( b_r \) are defined as:
+Where r is the university roll number and the parameters $$a_r$$ and $$b_r$$ are defined as:
 
 $$a_r = 0.05 \times (r \bmod 7)$$
 
@@ -46,7 +46,7 @@ The transformed variable is modelled using a Gaussian-like probability density f
 **Parameter Estimation:**
 - Mean (μ) → Sample mean  
 - Variance (σ²) → Sample variance  
-- Lambda (λ) → Computed from variance.\n
+- Lambda (λ) → Computed from variance.
 
 $$\lambda = \frac{1}{2\sigma^2}$$
 - Normalisation constant (c) → Computed analytically
@@ -93,13 +93,3 @@ $$c = \sqrt{\frac{\lambda}{\pi}}$$
 - NumPy  
 - Pandas  
 - Matplotlib  
-
----
-
-## How to Run
-1. Open the notebook in **Google Colab**
-2. Upload the dataset
-3. Run all cells sequentially
-4. Observe the learned PDF and visualization
-
----
